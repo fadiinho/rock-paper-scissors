@@ -18,7 +18,9 @@
         break;
 
       case Winner.House:
-        score.set($score - 1);
+        if ($score > 0) {
+          score.set($score - 1);
+        }
         break;
 
       default: break;
